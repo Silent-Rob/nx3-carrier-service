@@ -339,6 +339,11 @@ body.menu-open {
   background-size: cover, cover;
 }
 
+.hero-stage > * {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.62fr) minmax(280px, 0.38fr);
@@ -354,6 +359,10 @@ body.menu-open {
   flex-direction: column;
   justify-content: center;
   max-width: 660px;
+}
+
+.hero-mobile-media {
+  display: none;
 }
 
 .hero-spacer {
@@ -2688,19 +2697,85 @@ body.menu-open {
 @media (max-width: 1040px) {
   .workflow-story-layout {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .workflow-panel-column {
-    display: none;
+    display: block;
+    order: -1;
+    align-self: start;
+    position: sticky;
+    top: 96px;
+    z-index: 2;
+  }
+
+  .workflow-story-heading {
+    margin-bottom: 30px;
+  }
+
+  .workflow-story-steps {
+    display: grid;
+    gap: 0;
   }
 
   .workflow-step {
-    min-height: auto;
-    padding: 0 0 24px;
+    min-height: 54vh;
+    padding: 0 0 7vh;
+    align-items: flex-end;
   }
 
   .workflow-mobile-preview {
-    display: block;
+    display: none;
+  }
+
+  .workflow-step-card {
+    max-width: 760px;
+    padding: 24px;
+  }
+
+  .workflow-step-card h3 {
+    font-size: clamp(1.45rem, 3.8vw, 1.95rem);
+  }
+
+  .workflow-step-card > p:last-of-type {
+    line-height: 1.62;
+  }
+
+  .workflow-step.is-active .workflow-step-card {
+    transform: none;
+    border-color: rgba(34, 40, 30, 0.08);
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .workflow-sim-shell {
+    position: static;
+    top: auto;
+    padding: 18px;
+  }
+
+  .workflow-sim-top h3 {
+    font-size: 1.28rem;
+  }
+
+  .workflow-sim-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-sim-sidebar {
+    display: none;
+  }
+
+  .workflow-sim-stage {
+    min-height: 440px;
+  }
+
+  .workflow-scene-panel {
+    padding: 14px;
+  }
+
+  .workflow-mini-panel {
+    margin-top: 18px;
   }
 }
 
@@ -2733,16 +2808,30 @@ body.menu-open {
 
   .hero-stage {
     min-height: 0;
-    padding: 34px;
+    padding: 34px 34px 330px;
+    background: linear-gradient(180deg, rgba(248, 248, 248, 0.98) 0%, rgba(248, 248, 248, 0.96) 60%, rgba(248, 248, 248, 0.92) 100%);
+  }
+
+  .hero-stage::after {
+    content: "";
+    position: absolute;
+    left: 34px;
+    right: 34px;
+    bottom: 34px;
+    height: min(34vw, 280px);
+    border-radius: 24px;
     background:
-      linear-gradient(180deg, rgba(248, 248, 248, 0.98) 0%, rgba(248, 248, 248, 0.9) 36%, rgba(248, 248, 248, 0.5) 58%, rgba(248, 248, 248, 0.14) 78%, rgba(248, 248, 248, 0) 100%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(34, 40, 30, 0.08)),
       var(--hero-background-image);
-    background-position: center top, 66% center;
-    background-size: cover, cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 18px 44px rgba(34, 40, 30, 0.14);
+    z-index: 0;
   }
 
   .hero-grid {
-    min-height: 560px;
+    min-height: 0;
   }
 
   .hero-spacer {
@@ -2759,6 +2848,10 @@ body.menu-open {
 
   .logo-band-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .logo-band-item:nth-child(n + 7) {
+    display: none;
   }
 
   .trust-items,
@@ -2828,19 +2921,96 @@ body.menu-open {
     padding-top: 24px;
   }
 
+  .workflow-step {
+    min-height: 48vh;
+    padding-bottom: 6vh;
+    align-items: stretch;
+  }
+
+  .workflow-panel-column {
+    top: 86px;
+  }
+
+  .workflow-sim-shell {
+    padding: 14px;
+  }
+
+  .workflow-sim-top {
+    margin-bottom: 14px;
+  }
+
+  .workflow-sim-top h3 {
+    font-size: 1.12rem;
+  }
+
+  .workflow-sim-sidebar {
+    display: grid;
+    gap: 12px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+  }
+
+  .workflow-milestone-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .workflow-milestone {
+    min-width: 0;
+    padding: 12px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(34, 40, 30, 0.08);
+    opacity: 1;
+  }
+
+  .workflow-sidebar-note {
+    display: none;
+  }
+
+  .workflow-progress {
+    display: none;
+  }
+
+  .workflow-sim-stage {
+    min-height: 360px;
+  }
+
+  .workflow-step-card {
+    display: none;
+  }
+
   .hero-stage {
-    padding: 26px;
+    padding: 24px;
     border-radius: 24px;
-    background:
-      linear-gradient(180deg, rgba(248, 248, 248, 0.98) 0%, rgba(248, 248, 248, 0.93) 34%, rgba(248, 248, 248, 0.66) 58%, rgba(248, 248, 248, 0.22) 78%, rgba(248, 248, 248, 0.04) 100%),
-      var(--hero-background-image);
-    background-position: center top, 70% center;
-    background-size: cover, cover;
+    background: linear-gradient(180deg, rgba(248, 248, 248, 0.98) 0%, rgba(248, 248, 248, 0.96) 60%, rgba(248, 248, 248, 0.93) 100%);
+  }
+
+  .hero-stage::after {
+    display: none;
   }
 
   .hero-grid {
-    min-height: 520px;
+    min-height: 0;
     gap: 16px;
+  }
+
+  .hero-mobile-media {
+    display: block;
+    margin-bottom: 18px;
+    min-height: 182px;
+    border-radius: 20px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(34, 40, 30, 0.08)),
+      var(--hero-background-image);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 18px 44px rgba(34, 40, 30, 0.14);
   }
 
   .hero-copy h1 {
@@ -2857,7 +3027,6 @@ body.menu-open {
 
   .signal-grid,
   .pain-grid,
-  .logo-band-grid,
   .trust-items,
   .process-grid,
   .audience-grid,
@@ -2872,6 +3041,19 @@ body.menu-open {
     gap: 12px 18px;
   }
 
+  .logo-band-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .logo-band-item {
+    min-height: 82px;
+    padding: 14px 16px;
+  }
+
+  .logo-band-item:nth-child(n + 5) {
+    display: none;
+  }
+
   .outcomes-grid {
     grid-template-columns: 1fr;
   }
@@ -2880,6 +3062,10 @@ body.menu-open {
   .feature-card-large {
     grid-column: 1 / -1;
     min-height: auto;
+  }
+
+  .recipe-card-media {
+    aspect-ratio: 16 / 8;
   }
 
   .recipe-card-copy {

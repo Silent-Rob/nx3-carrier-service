@@ -403,6 +403,7 @@
     const milestones = Array.from(document.querySelectorAll(".workflow-milestone[data-milestone]"));
     const scenePanels = Array.from(document.querySelectorAll(".workflow-scene-panel"));
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const compactStory = window.matchMedia("(max-width: 1040px)");
     let activeScene = 0;
     let rafId = 0;
 
@@ -457,7 +458,7 @@
     }
 
     function findBestStep() {
-      const focusLine = window.innerHeight * 0.42;
+      const focusLine = compactStory.matches ? window.innerHeight * 0.72 : window.innerHeight * 0.42;
       let bestStep = steps[0];
       let bestDistance = Number.POSITIVE_INFINITY;
 
@@ -539,7 +540,7 @@
         if (target) {
           target.scrollIntoView({
             behavior: reduceMotion.matches ? "auto" : "smooth",
-            block: "center",
+            block: compactStory.matches ? "start" : "center",
           });
         }
       });
