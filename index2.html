@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NX3 Carrier Service | Scrolly-Telling Prototype</title>
+    <meta
+      name="description"
+      content="NX3 Carrier Service zeigt einen modernen Prüfprozess für Carrier, Transportunternehmen und Transportdienstleister mit datenbasierter Freigabe."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="stylesheet" href="cookie-consent.css" />
+    <script src="cookie-consent.js" defer></script>
+    <script src="script2.js" defer></script>
+  </head>
+  <body>
+    <div class="nx3-shell">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+      <div class="noise"></div>
+
+      <header class="site-header">
+        <div class="nx3-container header-inner">
+          <a class="brand" href="#top">
+            <img class="brand-logo" src="assets/nx3-logo.png" alt="NX3 Logo" />
+            <span class="brand-copy">
+              <strong>Carrier Service</strong>
+              <small>Scrolly-Telling Prototype</small>
+            </span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            type="button"
+          >
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+            <a href="#loesung">Lösung</a>
+            <a href="#funktionen">Funktionen</a>
+            <a href="#fuer-wen">Für wen</a>
+            <a href="#faq">FAQ</a>
+            <a href="#demo">Demo</a>
+          </nav>
+
+          <a class="nx3-button nx3-button-primary header-cta" href="#demo">Demo anfragen</a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero-section">
+          <div class="nx3-container hero-grid">
+            <div class="hero-copy">
+              <p class="nx3-eyebrow">NX3 Carrier Service</p>
+              <h1>Carrier-Prüfung automatisieren. Risiken früher erkennen.</h1>
+              <p class="hero-subheadline">
+                NX3 unterstützt Logistikunternehmen und Verlader dabei, Carrier,
+                Transportunternehmen und Transportdienstleister datenbasiert zu prüfen
+                und fundierter freizugeben.
+              </p>
+
+              <div class="hero-actions">
+                <a class="nx3-button nx3-button-primary" href="#demo">Demo anfragen</a>
+                <a class="nx3-button nx3-button-secondary" href="#loesung">Prüfprozess ansehen</a>
+              </div>
+
+              <p class="hero-microcopy">Scrollen Sie durch einen modernen Prüfprozess.</p>
+            </div>
+
+            <aside class="hero-brief" aria-label="Wichtige Produktfakten">
+              <div class="brief-head">
+                <span class="nx3-tag">Prüfprozess in einem Blick</span>
+                <span class="status-pill is-success">Enterprise-ready</span>
+              </div>
+
+              <div class="brief-metrics">
+                <div class="brief-metric">
+                  <strong>80.000+</strong>
+                  <span>Carrier-Datensätze als Startpunkt</span>
+                </div>
+                <div class="brief-metric">
+                  <strong>8+</strong>
+                  <span>Quellen wie North Data, VIES, BALM und Register</span>
+                </div>
+                <div class="brief-metric">
+                  <strong>KI</strong>
+                  <span>Dokumentenanalyse für EU-Lizenz, Versicherung und Nachweise</span>
+                </div>
+                <div class="brief-metric">
+                  <strong>1</strong>
+                  <span>Strukturierter Workflow für Daten, Dokumente und Freigabe</span>
+                </div>
+              </div>
+
+              <div class="brief-process">
+                <div class="brief-process-item is-active">
+                  <span class="process-dot"></span>
+                  <div>
+                    <strong>Datensatz verfügbar</strong>
+                    <small>Unternehmen schneller identifizieren</small>
+                  </div>
+                </div>
+                <div class="brief-process-item">
+                  <span class="process-dot"></span>
+                  <div>
+                    <strong>Quellen verbunden</strong>
+                    <small>Register, UID, Sanktionen, Credit Check</small>
+                  </div>
+                </div>
+                <div class="brief-process-item">
+                  <span class="process-dot"></span>
+                  <div>
+                    <strong>Freigabe dokumentiert</strong>
+                    <small>Belastbare Entscheidung statt Einzelurteil</small>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="scrolly-section" id="loesung">
+          <div class="nx3-container">
+            <div class="section-heading section-heading-wide">
+              <p class="nx3-eyebrow">Scrolly-Telling Simulation</p>
+              <h2>Die Carrier-Prüfung wird erst dann klar, wenn man den Prozess sieht.</h2>
+              <p>
+                Die folgende Strecke simuliert einen modernen Prüfprozess für Carrier,
+                Frachtführer, Transportunternehmen, Subunternehmer und weitere
+                Logistikpartner.
+              </p>
+            </div>
+
+            <div class="scrolly-layout">
+              <div class="story-column">
+                <article class="story-step is-active" data-scene="1" id="scene-1">
+                  <div class="story-card">
+                    <span class="step-number">01</span>
+                    <p class="step-label">Unternehmen identifiziert</p>
+                    <h3>Nicht bei null anfangen.</h3>
+                    <p>
+                      Greifen Sie auf bestehende Carrier- und Unternehmensdaten zu und
+                      starten Sie Prüfungen schneller.
+                    </p>
+
+                    <div class="mobile-preview">
+                      <div class="mini-panel">
+                        <div class="mini-top">
+                          <span>Record Lookup</span>
+                          <span class="status-pill is-success">Unternehmen gefunden</span>
+                        </div>
+                        <div class="mini-search">Muster Cargo Polska Sp. z o.o.</div>
+                        <div class="mini-grid mini-grid-two">
+                          <div>
+                            <label>Land</label>
+                            <strong>PL</strong>
+                          </div>
+                          <div>
+                            <label>UID</label>
+                            <strong>PL5271148291</strong>
+                          </div>
+                          <div>
+                            <label>Status</label>
+                            <strong>Aktiv</strong>
+                          </div>
+                          <div>
+                            <label>Profil</label>
+                            <strong>Basisdatensatz</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="story-step" data-scene="2" id="scene-2">
+                  <div class="story-card">
+                    <span class="step-number">02</span>
+                    <p class="step-label">Datenquellen abgeglichen</p>
+                    <h3>Datenquellen automatisch verbinden.</h3>
+                    <p>
+                      NX3 prüft relevante Informationen über externe Register und
+                      Datenservices in einem strukturierten Prozess.
+                    </p>
+
+                    <div class="mobile-preview">
+                      <div class="mini-panel">
+                        <div class="mini-top">
+                          <span>Quellen-Hub</span>
+                          <span class="status-pill is-progress">Abgleich läuft</span>
+                        </div>
+                        <ul class="mini-list">
+                          <li><strong>North Data</strong><span>abgeglichen</span></li>
+                          <li><strong>VIES</strong><span>gültig</span></li>
+                          <li><strong>BALM</strong><span>geprüft</span></li>
+                          <li><strong>Sanktionslisten</strong><span>kein Treffer</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="story-step" data-scene="3" id="scene-3">
+                  <div class="story-card">
+                    <span class="step-number">03</span>
+                    <p class="step-label">Dokumente analysiert</p>
+                    <h3>Dokumente automatisiert prüfen.</h3>
+                    <p>
+                      EU-Lizenz, Versicherungsnachweise und Registerdokumente werden
+                      strukturiert analysiert und auf Validität geprüft.
+                    </p>
+
+                    <div class="mobile-preview">
+                      <div class="mini-panel">
+                        <div class="mini-top">
+                          <span>Dokumentenprüfung</span>
+                          <span class="status-pill is-success">Analyse abgeschlossen</span>
+                        </div>
+                        <div class="mini-document">
+                          <div class="mini-document-sheet"></div>
+                          <div class="mini-document-fields">
+                            <span>Dokument erkannt</span>
+                            <span>Pflichtfelder vorhanden</span>
+                            <span>Gültigkeit erkannt</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="story-step" data-scene="4" id="scene-4">
+                  <div class="story-card">
+                    <span class="step-number">04</span>
+                    <p class="step-label">Risiken bewertet</p>
+                    <h3>Risiken früher erkennen.</h3>
+                    <p>
+                      NX3 führt Daten, Dokumente und Prüfergebnisse zu einer
+                      belastbaren Risikoeinschätzung zusammen.
+                    </p>
+
+                    <div class="mobile-preview">
+                      <div class="mini-panel">
+                        <div class="mini-top">
+                          <span>Risk Summary</span>
+                          <span class="status-pill is-success">Low Risk</span>
+                        </div>
+                        <ul class="mini-list">
+                          <li><strong>Daten</strong><span>vollständig</span></li>
+                          <li><strong>Versicherung</strong><span>vorhanden</span></li>
+                          <li><strong>EU-Lizenz</strong><span>gültig</span></li>
+                          <li><strong>Sanktionslisten</strong><span>ohne Treffer</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="story-step" data-scene="5" id="scene-5">
+                  <div class="story-card">
+                    <span class="step-number">05</span>
+                    <p class="step-label">Freigabe empfohlen</p>
+                    <h3>Schneller zu fundierten Entscheidungen.</h3>
+                    <p>
+                      Aus einzelnen Prüfungen wird ein strukturierter Freigabeprozess
+                      mit dokumentierter Entscheidung.
+                    </p>
+
+                    <div class="mobile-preview">
+                      <div class="mini-panel">
+                        <div class="mini-top">
+                          <span>Freigabe</span>
+                          <span class="status-pill is-success">Prüfung erfolgreich abgeschlossen</span>
+                        </div>
+                        <div class="mini-approval">
+                          <strong>Freigabe empfohlen</strong>
+                          <span>vollständig geprüft</span>
+                          <span>letzte Aktualisierung: heute</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="story-step" data-scene="6" id="scene-6">
+                  <div class="story-card">
+                    <span class="step-number">06</span>
+                    <p class="step-label">Prüfprozess skaliert</p>
+                    <h3>Aus Einzelprüfung wird skalierbarer Prozess.</h3>
+                    <p>
+                      Was heute manuell läuft, wird mit NX3 zum strukturierten
+                      Prüfablauf für Carrier, Transportdienstleister und
+                      Subunternehmer.
+                    </p>
+
+                    <div class="mobile-preview">
+                      <div class="mini-panel">
+                        <div class="mini-top">
+                          <span>Operations Dashboard</span>
+                          <span class="status-pill is-progress">Team Flow</span>
+                        </div>
+                        <div class="mini-stat-row">
+                          <div><strong>24</strong><span>aktiv</span></div>
+                          <div><strong>312</strong><span>freigegeben</span></div>
+                          <div><strong>6</strong><span>flagged</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="panel-column">
+                <div class="sim-shell" id="sim-shell" data-active-scene="1">
+                  <div class="visually-hidden" id="sim-live-region" aria-live="polite"></div>
+
+                  <div class="sim-top">
+                    <div>
+                      <span class="nx3-tag">Live-Prüfung</span>
+                      <h3 id="sim-scene-title">Unternehmen identifiziert</h3>
+                    </div>
+                    <span class="status-pill is-progress" id="sim-scene-status">Schritt 1 von 6</span>
+                  </div>
+
+                  <div class="sim-progress" aria-label="Prozessnavigation">
+                    <button class="sim-progress-step is-active" type="button" data-progress="1">
+                      <span></span>
+                      Record
+                    </button>
+                    <button class="sim-progress-step" type="button" data-progress="2">
+                      <span></span>
+                      Quellen
+                    </button>
+                    <button class="sim-progress-step" type="button" data-progress="3">
+                      <span></span>
+                      Docs
+                    </button>
+                    <button class="sim-progress-step" type="button" data-progress="4">
+                      <span></span>
+                      Risiko
+                    </button>
+                    <button class="sim-progress-step" type="button" data-progress="5">
+                      <span></span>
+                      Freigabe
+                    </button>
+                    <button class="sim-progress-step" type="button" data-progress="6">
+                      <span></span>
+                      Betrieb
+                    </button>
+                  </div>
+
+                  <div class="sim-workspace">
+                    <aside class="sim-sidebar">
+                      <span class="sidebar-label">Entscheidungsspur</span>
+                      <ul class="milestone-list">
+                        <li class="milestone is-active" data-milestone="1">
+                          <span class="milestone-dot"></span>
+                          <div>
+                            <strong>Basissatz</strong>
+                            <small>Carrier-Profil vorhanden</small>
+                          </div>
+                        </li>
+                        <li class="milestone" data-milestone="2">
+                          <span class="milestone-dot"></span>
+                          <div>
+                            <strong>Quellen</strong>
+                            <small>Register und Datenservices verbunden</small>
+                          </div>
+                        </li>
+                        <li class="milestone" data-milestone="3">
+                          <span class="milestone-dot"></span>
+                          <div>
+                            <strong>Dokumente</strong>
+                            <small>Analyse und Feldprüfung</small>
+                          </div>
+                        </li>
+                        <li class="milestone" data-milestone="4">
+                          <span class="milestone-dot"></span>
+                          <div>
+                            <strong>Risiko</strong>
+                            <small>Belastbare Bewertung</small>
+                          </div>
+                        </li>
+                        <li class="milestone" data-milestone="5">
+                          <span class="milestone-dot"></span>
+                          <div>
+                            <strong>Freigabe</strong>
+                            <small>Dokumentierte Entscheidung</small>
+                          </div>
+                        </li>
+                        <li class="milestone" data-milestone="6">
+                          <span class="milestone-dot"></span>
+                          <div>
+                            <strong>Betrieb</strong>
+                            <small>Skalierbarer Team-Prozess</small>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <div class="sidebar-note">
+                        <span class="nx3-tag">Warum das zählt</span>
+                        <p>
+                          Daten, Dokumente und Signale enden nicht in einem Sammelordner,
+                          sondern in einer Freigabelogik.
+                        </p>
+                      </div>
+                    </aside>
+
+                    <div class="sim-stage">
+                      <section class="scene-panel scene-panel-1">
+                        <div class="scene-card">
+                          <div class="window-bar">
+                            <span class="window-title">Record Lookup</span>
+                            <span class="window-note">Suche nach Carrier, UID oder Register-Nr.</span>
+                          </div>
+
+                          <div class="search-row">
+                            <div class="search-pill">Muster Cargo Polska Sp. z o.o.</div>
+                            <button class="ghost-action" type="button">Record laden</button>
+                          </div>
+
+                          <div class="record-card">
+                            <div class="record-identity">
+                              <div class="record-mark">MC</div>
+                              <div>
+                                <strong>Muster Cargo Polska Sp. z o.o.</strong>
+                                <span>Transportdienstleister für internationale Linien und Spotmarkt</span>
+                              </div>
+                            </div>
+                            <span class="status-pill is-success">Unternehmen gefunden</span>
+                          </div>
+
+                          <div class="data-grid">
+                            <div>
+                              <label>Land</label>
+                              <strong>Polen</strong>
+                            </div>
+                            <div>
+                              <label>UID / VAT ID</label>
+                              <strong>PL5271148291</strong>
+                            </div>
+                            <div>
+                              <label>Status</label>
+                              <strong>Aktiv</strong>
+                            </div>
+                            <div>
+                              <label>Datensatz</label>
+                              <strong>Bestehendes Profil</strong>
+                            </div>
+                            <div>
+                              <label>Letzte Prüfung</label>
+                              <strong>vor 31 Tagen</strong>
+                            </div>
+                            <div>
+                              <label>Nutzerkontext</label>
+                              <strong>Spotmarkt Freigabe</strong>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="scene-panel scene-panel-2">
+                        <div class="scene-card">
+                          <div class="window-bar">
+                            <span class="window-title">Quellen-Hub</span>
+                            <span class="window-note">Automatischer Abgleich externer Register und Services</span>
+                          </div>
+
+                          <div class="source-grid">
+                            <article class="source-item">
+                              <strong>North Data</strong>
+                              <span class="status-pill is-success">abgeglichen</span>
+                            </article>
+                            <article class="source-item">
+                              <strong>VIES</strong>
+                              <span class="status-pill is-success">gültig</span>
+                            </article>
+                            <article class="source-item">
+                              <strong>BALM</strong>
+                              <span class="status-pill is-progress">geprüft</span>
+                            </article>
+                            <article class="source-item">
+                              <strong>Handelsreg.</strong>
+                              <span class="status-pill is-success">verbunden</span>
+                            </article>
+                            <article class="source-item">
+                              <strong>Versicherungsdaten</strong>
+                              <span class="status-pill is-progress">abgeglichen</span>
+                            </article>
+                            <article class="source-item">
+                              <strong>UID / VAT ID</strong>
+                              <span class="status-pill is-success">gültig</span>
+                            </article>
+                            <article class="source-item">
+                              <strong>Sanktionslisten</strong>
+                              <span class="status-pill is-success">kein Treffer</span>
+                            </article>
+                            <article class="source-item">
+                              <strong>Credit Check</strong>
+                              <span class="status-pill is-progress">verbunden</span>
+                            </article>
+                          </div>
+
+                          <div class="source-summary">
+                            <div class="summary-chip">
+                              <strong>8 Quellen</strong>
+                              <span>ohne Medienbruch verknüpft</span>
+                            </div>
+                            <div class="summary-chip">
+                              <strong>1 Ablauf</strong>
+                              <span>statt manueller Einzelabfragen</span>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="scene-panel scene-panel-3">
+                        <div class="scene-card scene-card-docs">
+                          <div class="window-bar">
+                            <span class="window-title">Dokumentenprüfung</span>
+                            <span class="window-note">KI extrahiert Pflichtfelder, prüft Gültigkeit und verdichtet das Dokument zu verwertbaren Prüfsignalen.</span>
+                          </div>
+
+                          <figure class="document-review-figure">
+                            <img
+                              class="document-review-shot"
+                              src="assets/nx3-ai-document-check.svg"
+                              alt="KI analysiert eine EU-Lizenz, erkennt Pflichtfelder und extrahiert Prüfsignale."
+                            />
+                          </figure>
+
+                          <div class="document-insights">
+                            <div class="insight-card">
+                              <label>Dokumenttyp</label>
+                              <strong>EU-Lizenz</strong>
+                            </div>
+                            <div class="insight-card">
+                              <label>Gültig bis</label>
+                              <strong>12.09.2027</strong>
+                            </div>
+                            <div class="insight-card">
+                              <label>Pflichtfelder</label>
+                              <strong>vorhanden</strong>
+                            </div>
+                            <div class="insight-card">
+                              <label>AI-Bewertung</label>
+                              <strong>Analyse abgeschlossen</strong>
+                            </div>
+                          </div>
+
+                          <ul class="analysis-list">
+                            <li>Dokument erkannt</li>
+                            <li>Pflichtfelder vorhanden</li>
+                            <li>Gültigkeit erkannt</li>
+                            <li>Keine offensichtliche Manipulation</li>
+                          </ul>
+                        </div>
+                      </section>
+
+                      <section class="scene-panel scene-panel-4">
+                        <div class="scene-card">
+                          <div class="window-bar">
+                            <span class="window-title">Risk Summary</span>
+                            <span class="window-note">Belastbare Bewertung auf Basis aller Ergebnisse</span>
+                          </div>
+
+                          <div class="risk-header">
+                            <div>
+                              <strong>Low Risk</strong>
+                              <span>Keine kritischen Auffälligkeiten</span>
+                            </div>
+                            <span class="risk-badge">84 / 100 Score</span>
+                          </div>
+
+                          <div class="risk-grid">
+                            <article class="risk-item">
+                              <strong>Daten vollständig</strong>
+                              <span>Unternehmens- und Registerdaten sind sauber abgeglichen.</span>
+                            </article>
+                            <article class="risk-item">
+                              <strong>Dokumente valide</strong>
+                              <span>EU-Lizenz und Nachweise wurden strukturiert analysiert.</span>
+                            </article>
+                            <article class="risk-item">
+                              <strong>Sanktionslisten ohne Treffer</strong>
+                              <span>Keine kritischen Listenhinweise im aktuellen Check.</span>
+                            </article>
+                            <article class="risk-item">
+                              <strong>Versicherung vorhanden</strong>
+                              <span>Nachweis ist vorhanden und im Prozess referenziert.</span>
+                            </article>
+                            <article class="risk-item">
+                              <strong>EU-Lizenz gültig</strong>
+                              <span>Gültigkeit erkannt und für die Entscheidung nutzbar.</span>
+                            </article>
+                            <article class="risk-item risk-item-note">
+                              <strong>Hinweis</strong>
+                              <span>Manuelle Prüfung nur bei Sonderfall oder Policen-Änderung empfohlen.</span>
+                            </article>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="scene-panel scene-panel-5">
+                        <div class="scene-card">
+                          <div class="window-bar">
+                            <span class="window-title">Freigabeentscheidung</span>
+                            <span class="window-note">Aus Prüfung wird dokumentierte Empfehlung</span>
+                          </div>
+
+                          <div class="approval-card">
+                            <span class="approval-kicker">Prüfung erfolgreich abgeschlossen</span>
+                            <h4>Freigabe empfohlen</h4>
+                            <p>
+                              Vollständig geprüft. Alle relevanten Datenquellen und
+                              Dokumente liegen im Entscheidungsbild vor.
+                            </p>
+
+                            <div class="approval-grid">
+                              <div>
+                                <label>Status</label>
+                                <strong>vollständig geprüft</strong>
+                              </div>
+                              <div>
+                                <label>Entscheidung</label>
+                                <strong>dokumentiert</strong>
+                              </div>
+                              <div>
+                                <label>Letzte Aktualisierung</label>
+                                <strong>heute, 14:20</strong>
+                              </div>
+                              <div>
+                                <label>Nächster Trigger</label>
+                                <strong>Renewal in 90 Tagen</strong>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="scene-panel scene-panel-6">
+                        <div class="scene-card">
+                          <div class="window-bar">
+                            <span class="window-title">Operations Dashboard</span>
+                            <span class="window-note">Skalierung für laufende Carrier- und Partnerprüfungen</span>
+                          </div>
+
+                          <div class="dashboard-stats">
+                            <div class="dashboard-stat">
+                              <strong>24</strong>
+                              <span>aktive Checks</span>
+                            </div>
+                            <div class="dashboard-stat">
+                              <strong>312</strong>
+                              <span>freigegebene Partner</span>
+                            </div>
+                            <div class="dashboard-stat">
+                              <strong>11</strong>
+                              <span>in Review</span>
+                            </div>
+                            <div class="dashboard-stat">
+                              <strong>6</strong>
+                              <span>flagged cases</span>
+                            </div>
+                          </div>
+
+                          <div class="dashboard-table">
+                            <div class="dashboard-row">
+                              <strong>Nordic Freight OY</strong>
+                              <span>Re-Check in Arbeit</span>
+                              <em>Compliance</em>
+                            </div>
+                            <div class="dashboard-row">
+                              <strong>Delta Transport SRL</strong>
+                              <span>Freigabe empfohlen</span>
+                              <em>Operations</em>
+                            </div>
+                            <div class="dashboard-row">
+                              <strong>Muster Cargo Polska</strong>
+                              <span>Aktiv und gültig</span>
+                              <em>Carrier Mgmt</em>
+                            </div>
+                            <div class="dashboard-row">
+                              <strong>Express Trucking GmbH</strong>
+                              <span>Dokument nachfordern</span>
+                              <em>Procurement</em>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="benefits-section">
+          <div class="nx3-container">
+            <div class="section-heading">
+              <p class="nx3-eyebrow">Ihr Nutzen</p>
+              <h2>Weniger manuelle Einzelschritte. Mehr belastbare Freigaben.</h2>
+            </div>
+
+            <div class="benefits-grid">
+              <article class="benefit-card">
+                <span class="benefit-index">01</span>
+                <h3>Carrier-Prüfung automatisieren</h3>
+                <p>
+                  Bündeln Sie Daten, Dokumente und Prüfquellen in einem strukturierten
+                  Prozess statt in manuellen Einzelschritten.
+                </p>
+              </article>
+              <article class="benefit-card">
+                <span class="benefit-index">02</span>
+                <h3>Risiken früher erkennen</h3>
+                <p>
+                  Erkennen Sie Auffälligkeiten, fehlende Nachweise und kritische
+                  Abweichungen, bevor sie operativ zum Problem werden.
+                </p>
+              </article>
+              <article class="benefit-card">
+                <span class="benefit-index">03</span>
+                <h3>Freigaben beschleunigen</h3>
+                <p>
+                  Treffen Sie fundierte Entscheidungen schneller und schaffen Sie einen
+                  skalierbaren Prüfprozess für Transportunternehmen und
+                  Transportdienstleister.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-section" id="funktionen">
+          <div class="nx3-container">
+            <div class="section-heading">
+              <p class="nx3-eyebrow">Funktionen und Fakten</p>
+              <h2>Die Prüfbausteine sind auf echte Freigabeentscheidungen ausgerichtet.</h2>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature-card">
+                <span class="feature-icon">01</span>
+                <p class="feature-label">Datengrundlage</p>
+                <h3>80.000+ Carrier-Datensätze</h3>
+                <p>Vorhandene Datensätze beschleunigen den Start neuer Prüfungen.</p>
+              </article>
+              <article class="feature-card">
+                <span class="feature-icon">02</span>
+                <p class="feature-label">Quellen-Hub</p>
+                <h3>Externe Datenquellen</h3>
+                <p>North Data, VIES, BALM, Handelsregister und weitere Services im selben Ablauf.</p>
+              </article>
+              <article class="feature-card">
+                <span class="feature-icon">03</span>
+                <p class="feature-label">KI-Layer</p>
+                <h3>KI-Dokumentenanalyse</h3>
+                <p>Dokumenttypen, Pflichtfelder, Gültigkeiten und Auffälligkeiten werden erfasst.</p>
+              </article>
+              <article class="feature-card">
+                <span class="feature-icon">04</span>
+                <p class="feature-label">Lizenzprüfung</p>
+                <h3>EU-Lizenz-Prüfung</h3>
+                <p>Relevante Felder und Fristen werden direkt für die Freigabe nutzbar gemacht.</p>
+              </article>
+              <article class="feature-card">
+                <span class="feature-icon">05</span>
+                <p class="feature-label">Versicherung</p>
+                <h3>Versicherungsprüfung</h3>
+                <p>Nachweise lassen sich strukturiert in die Risikoeinschätzung einbeziehen.</p>
+              </article>
+              <article class="feature-card">
+                <span class="feature-icon">06</span>
+                <p class="feature-label">Compliance</p>
+                <h3>Sanktionslistenabgleich</h3>
+                <p>Treffer werden im Prozess sichtbar statt in separaten Rechercheschritten.</p>
+              </article>
+              <article class="feature-card">
+                <span class="feature-icon">07</span>
+                <p class="feature-label">Bonität</p>
+                <h3>Credit Checks</h3>
+                <p>Wirtschaftliche Signale können in eine fundiertere Entscheidung einfließen.</p>
+              </article>
+              <article class="feature-card">
+                <span class="feature-icon">08</span>
+                <p class="feature-label">Decision Layer</p>
+                <h3>Strukturierte Freigabelogik</h3>
+                <p>Aus Prüfschritten wird eine dokumentierte Empfehlung mit Team-Kontext.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="audience-section" id="fuer-wen">
+          <div class="nx3-container">
+            <div class="section-heading">
+              <p class="nx3-eyebrow">Für wen</p>
+              <h2>Der Service spricht operative Geschwindigkeit und Compliance zugleich an.</h2>
+            </div>
+
+            <div class="audience-grid">
+              <article class="audience-card">
+                <span class="audience-tag">Für Logistikunternehmen</span>
+                <h3>Mehr Tempo bei neuen Transportpartnern, ohne die Kontrolle zu verlieren.</h3>
+                <ul class="audience-list">
+                  <li>Schnelle Freigabe neuer Transportpartner</li>
+                  <li>Mehr Sicherheit im Spotmarkt</li>
+                  <li>Weniger Reibung in operativen Prozessen</li>
+                  <li>Strukturierte Prüfung von Subunternehmern</li>
+                </ul>
+              </article>
+
+              <article class="audience-card">
+                <span class="audience-tag">Für Verlader</span>
+                <h3>Nachvollziehbare Prüfung von Transportdienstleistern für Einkauf und Compliance.</h3>
+                <ul class="audience-list">
+                  <li>Bessere Entscheidungsgrundlage für Einkauf und Compliance</li>
+                  <li>Sauber dokumentierte Freigaben</li>
+                  <li>Mehr Transparenz über Partnerdaten und Nachweise</li>
+                  <li>Klare Grundlage für Carrier Management und Operations</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="role-strip">
+              <span>Relevant für Logistikunternehmen, 3PL, 4PL, Verlader, Carrier Management, Procurement, Operations und Compliance.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+          <div class="nx3-container faq-shell">
+            <div class="section-heading">
+              <p class="nx3-eyebrow">FAQ</p>
+              <h2>Wichtige Fragen vor dem Erstgespräch.</h2>
+            </div>
+
+            <div class="faq-list">
+              <article class="faq-item is-open">
+                <button class="faq-trigger" type="button" aria-expanded="true">
+                  Welche Unternehmen können mit NX3 geprüft werden?
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Carrier, Transportunternehmen, Frachtführer, Transportdienstleister,
+                    Subunternehmer und weitere Logistikpartner.
+                  </p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-trigger" type="button" aria-expanded="false">
+                  Welche Datenquellen werden berücksichtigt?
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Abhängig vom Setup unter anderem North Data, VIES, BALM,
+                    Handelsregister, Versicherungsdaten, UID / VAT ID, Sanktionslisten
+                    und Credit Checks.
+                  </p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-trigger" type="button" aria-expanded="false">
+                  Welche Dokumente können analysiert werden?
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Zum Beispiel EU-Lizenzen, Handelsregisterdokumente,
+                    Versicherungsnachweise, Briefköpfe und weitere relevante Belege.
+                  </p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-trigger" type="button" aria-expanded="false">
+                  Ist NX3 nur für neue Transportunternehmen relevant?
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Nein. Auch bestehende Carrier, Frachtführer und Subunternehmer
+                    können in wiederkehrende Prüfprozesse eingebunden werden.
+                  </p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-trigger" type="button" aria-expanded="false">
+                  Für welche Teams ist der Service gedacht?
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Vor allem für Carrier Management, Transport Procurement, Operations
+                    und Compliance sowie angrenzende Rollen in 3PL, 4PL und Verlader-Teams.
+                  </p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-trigger" type="button" aria-expanded="false">
+                  Wie läuft der Einstieg ab?
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Über ein fokussiertes Erstgespräch, in dem heutiger Prüfprozess,
+                    relevante Datenquellen, Dokumenttypen und ein sinnvoller Pilot
+                    gemeinsam eingeordnet werden.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-section" id="demo">
+          <div class="nx3-container">
+            <div class="cta-card">
+              <div class="cta-copy">
+                <p class="nx3-eyebrow">Nächster Schritt</p>
+                <h2>Bringen Sie Struktur in die Prüfung von Transportunternehmen.</h2>
+                <p>
+                  Zeigen Sie uns Ihren heutigen Carrier- oder Transportpartnerprozess.
+                  Wir zeigen Ihnen, wie NX3 Daten, Dokumente und Quellen in einer
+                  belastbaren Freigabelogik bündelt.
+                </p>
+              </div>
+
+              <div class="cta-panel">
+                <div class="cta-detail">
+                  <strong>Im Erstgespräch:</strong>
+                  <span>Use Case, Quellenbild, Dokumententypen und ein sinnvoller Startpunkt.</span>
+                </div>
+                <a class="nx3-button nx3-button-primary nx3-button-block" href="mailto:demo@nx3.example">
+                  Demo anfragen
+                </a>
+                <a class="nx3-button nx3-button-secondary nx3-button-block" href="mailto:kontakt@nx3.example">
+                  Erstgespräch vereinbaren
+                </a>
+                <p class="cta-note">Kontakt-Placeholder für den Prototyp. Antwortlogik später anschliessen.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="nx3-container footer-grid">
+          <div class="footer-brand">
+            <a class="brand footer-brand-link" href="#top">
+              <img class="brand-logo" src="assets/nx3-logo.png" alt="NX3 Logo" />
+              <span class="brand-copy">
+                <strong>Carrier Service</strong>
+                <small>Scrolly-Telling Prototype</small>
+              </span>
+            </a>
+          </div>
+
+          <div>
+            <span class="footer-title">Navigation</span>
+            <a href="#loesung">Lösung</a>
+            <a href="#funktionen">Funktionen</a>
+            <a href="#fuer-wen">Für wen</a>
+            <a href="#faq">FAQ</a>
+          </div>
+
+          <div>
+            <span class="footer-title">Kontakt</span>
+            <a href="mailto:demo@nx3.example">Demo anfragen</a>
+            <a href="mailto:kontakt@nx3.example">Kontakt-Placeholder</a>
+            <p>Enterprise Sales und Erstgespräch nach Abstimmung.</p>
+          </div>
+
+          <div>
+            <span class="footer-title">Recht</span>
+            <a href="#">Impressum Placeholder</a>
+            <a href="#">Datenschutz Placeholder</a>
+            <p>Diese Seite ist eine alternative Landingpage zum Testen des Story-Formats.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
